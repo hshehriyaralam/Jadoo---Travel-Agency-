@@ -1,4 +1,2 @@
-Hero section set pixel 
-hero section responsive 
-apply fonts
-set glory effect in easyandfast section
+overflow-x issue in banner, Testimonials and Hero   
+Hero section Responsive 

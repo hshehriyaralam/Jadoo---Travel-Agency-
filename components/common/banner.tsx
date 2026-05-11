@@ -8,18 +8,19 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-full min-h-screen p-4">
-      <div className="bg-[#DFD7F9]/20  mx-auto rounded-tl-[100px] 
-       w-[80%] flex flex-col  justify-center gap-10  h-90 ">
+    <section  className="w-full max-auto overflow-hidden">
+    <div className="max-w-[1356px]   h-[490px]  relative   mx-auto">
+      <div className="bg-[#DFD7F9]/20 mx-auto rounded-tl-[100px]   lg:p-1 p-4
+       w-[80%] flex flex-col  justify-center gap-10  h-90   z-40  relative ">
         <Image
           src={share}
           alt="share"
           width={50}
-          className=" absolute    right-34  top-826 z-50 "
+          className="absolute  -right-4 top-0 z-50"
         />
         <div>
-          <h2 className="text-[#5E6282] font-semibold  mt-6 lg:text-[30px]  text-[15px] text-center 
-           lg:max-w-[800px]   max-w-[300px]  mx-auto  ">
+          <h2 className="text-[#5E6282] font-semibold   lg:text-[30px]  text-[13px] text-center 
+           lg:max-w-[800px]   max-w-[250px]  mx-auto  ">
             Subscribe to get information, latest news and other interesting
             offers about Jadoo  
           </h2>
@@ -28,18 +29,19 @@ const Banner = () => {
         <Image
           src={ring}
           alt="ring"
-          className="   absolute  right-38  top-830 z-40"
+          className="hidden lg:block absolute  top-13  rotate-90 "
         />
         <Image
           src={ring}
           alt="ring"
-          className="absolute rotate-90 left-35  top-842"
+          className="absolute   right-0  z-40"
         />
 
         <div className="flex  lg:flex-row flex-col items-center justify-center  gap-2  ">
-          <div className="flex items-center justify-center gap-2  bg-white rounded-xl  
+          <div className="flex items-center justify-center gap-2  bg-white rounded-xl
+            
           lg:py-3.5 lg:px-6  px-3 py-1">
-            <Image alt="email logo" src={email} className="w-full" />
+            <Image alt="email logo" src={email}  />
             <input
               type="email"
               placeholder="Your email"
@@ -57,9 +59,11 @@ const Banner = () => {
       <Image
         src={starts}
         alt="stars"
-        className="relative bottom-20  left-285"
+        className="hidden lg:block absolute right-8 bottom-10  opacity-80"
       />
     </div>
+    </section>
+
   );
 };
 

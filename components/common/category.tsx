@@ -9,12 +9,13 @@ import decore from "@/public/category/sideDecore.png";
 const Category = () => {
 
   return (
-    <section className="w-full  p-6 ">
+    <section className="w-full mx-auto overflow-hidden ">
+      <div  className="max-w-[1228px] h-[525px] relative  mx-auto">
          <Image  
         src={decore}
         width={100}
         alt="side-decore"
-        className=" hidden lg:block absolute  right-10"   
+        className=" hidden lg:block absolute  right-0"   
         />
       <div className="flex flex-col items-center justify-center  gap-6">
       
@@ -70,6 +71,8 @@ const Category = () => {
           alt="Sqaure"
         />
       </div>
+      </div>
+
     </section>
   );
 };

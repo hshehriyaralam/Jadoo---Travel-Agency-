@@ -8,7 +8,7 @@ import Banner from '../common/banner'
 
 const Outlet = () => {
   return (
-    <div  className='w-full min-h-screen  z-40   flex flex-col  gap-4 '>
+    <div  className='w-full  z-40   flex flex-col  gap-4 '>
       <Hero />
       <Category />
       <TopSelling />

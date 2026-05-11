@@ -7,7 +7,10 @@ import userImage from "@/public/testimonials/Image.png";
 
 const Testimonials = () => {
   return (
-    <div className="w-full  lg:p-6 p-2  flex  flex-col lg:flex-row  items-start justify-center  ">
+    <section
+    className="w-full  mx-auto lg:px-6 overflow-hidden  "
+    >
+    <div className=" max-w-[1165] h-[356px]   flex  flex-col lg:flex-row  lg:items-start  items-center justify-center  mx-auto  ">
       {/* left div */}
       <div className=" lg:p-10 p-6 mt-10">
         <p className="text-[#5E6282] font-poppins  font-semibold mb-2 text-center lg:text-left ">
@@ -68,11 +71,12 @@ const Testimonials = () => {
         {/* Arrows */}
         <div className="hidden lg:flex flex-col gap-12   cursor-pointer  relative  left-30">
           <Image src={ArrowUp} alt="arrow-up" width={13} />
-
           <Image src={ArrowDown} alt="arrow-up" width={13} />
         </div>
       </div>
     </div>
+    </section>
+
   );
 };
 
