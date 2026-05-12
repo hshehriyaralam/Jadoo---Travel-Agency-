@@ -1,11 +1,11 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import fb from '@/public/footer/fb.png'
-import insta from '@/public/footer/insta.png'
-import  X from '@/public/footer/twiter.png'
-import  googlePlay  from '@/public/footer/googlePlay.png'
-import  PlayStore from '@/public/footer/appStore.png'
+import fb from '@/public/fb.png'
+import insta from '@/public/insta.png'
+import  X from '@/public/twiter.png'
+import  googlePlay  from '@/public/googlePlay.png'
+import  PlayStore from '@/public/appStore.png'
 import { motion } from "framer-motion";
 
 
