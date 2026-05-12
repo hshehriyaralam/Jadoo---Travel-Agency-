@@ -68,14 +68,14 @@ const Category = () => {
 
           ))}
         </div>
-
+{/* 
         <Image
           src={Rectangle}
           className="hidden lg:block  relative  z-30   right-58  bottom-22 "
           width={70}
           height={70}
           alt="Sqaure"
-        />
+        /> */}
       </div>
       </div>
 

@@ -93,9 +93,10 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`lg:hidden absolute top-0 right-0 h-screen w-[320px]   bg-white/90
-        backdrop-blur-lg shadow-2xl 
-        ${open ? "opacity-100  transition  duration-400  tranlate-x-0" : "translate-x-0 opacity-0 overflow-x-hidden"}
+        className={`lg:hidden absolute top-0 right-0 min-h-auto pb-10 w-[320px]   bg-white
+        backdrop-blur-lg shadow-2xl  overflow-x-hidden 
+        ${open ? " transition-transform -tranlate-y-0" : "-translate-y-130  "}
+        duration-300 
         `}>
         <div className="flex flex-col gap-6 mt-28 px-8">
           {navLinks.map((link) => (

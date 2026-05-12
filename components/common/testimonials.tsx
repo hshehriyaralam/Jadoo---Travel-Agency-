@@ -60,7 +60,7 @@ const Testimonials = () => {
 
   return (
     <section className="w-full  mx-auto lg:px-6 overflow-hidden  ">
-      <div className=" max-w-[1165] lg:h-[380px]    min-h-[600px]  flex  flex-col lg:flex-row  lg:items-start  items-center justify-center  mx-auto  ">
+      <div className=" max-w-[1165] lg:h-[360px]    min-h-[300px]  flex  flex-col lg:flex-row  lg:items-start  items-center justify-center  mx-auto  ">
         {/* left div */}
         <div className=" lg:p-10 p-6 mt-10">
           <p className="text-[#5E6282]   font-semibold mb-2 text-center lg:text-left ">
@@ -81,7 +81,7 @@ const Testimonials = () => {
                 initial="enter"
                 animate="center"
                 transition={{
-                  y: { type: "spring", stiffness: 300, damping: 30 },
+                  y: { type: "spring", stiffness: 200, damping: 20 },
                   opacity: { duration: 1.3},
                   // delay: 50,
                 }}

@@ -17,10 +17,9 @@ const Footer = () => {
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration:  0.6}}
+        className='w-full mx-auto px-6'
         >
-
-    <section  className='w-full mx-auto px-6'>
-      <div  className='max-w-[1617px] min-h-[250px] '>
+      <div  className='max-w-[1617px] min-h-[250px] mx-auto'>
         <div className={`hidden lg:flex   flex-col lg:flex-row    items-center justify-center lg:gap-20  gap-6 `}>
 
           {/* logo */}
@@ -206,7 +205,6 @@ const Footer = () => {
         </div>
         <p  className='text-[#5E6282] text-center lg:mt-14  my-8 '>All rights reserved@jado.co</p>
       </div>
-    </section>
         </motion.div>
 
   )

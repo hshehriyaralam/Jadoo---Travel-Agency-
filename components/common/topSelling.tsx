@@ -22,7 +22,7 @@ const TopSelling = () => {
           </div>
 
           {/*  selling cards  */}
-          <div className="flex flex-col lg:flex-row items-center justify-center  gap-8 relative  ">
+          <div className="flex flex-col lg:flex-row items-center justify-center  gap-12  lg:gap-8 relative  ">
             {sellingData?.map((sell) => (
               <motion.div
                 className="relative z-40  "
