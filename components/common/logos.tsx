@@ -1,5 +1,4 @@
 "use client"
-
 import React from "react";
 import logoOne from "@/public/logos/logo-1.png";
 import logoTwo from "@/public/logos/logo-2.png";
@@ -7,7 +6,7 @@ import logoThree from "@/public/logos/logo-3.png";
 import logoFour from "@/public/logos/logo-4.png";
 import logoFive from "@/public/logos/logo-5.png";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import Marquee from "react-fast-marquee";
 
 
 const Logos = () => {
@@ -50,19 +49,17 @@ const Logos = () => {
   ]
   return (
     <section className="w-full   p-6 overflow-hidden  mx-auto  my-10  ">
-      <div className="mx-auto   lg:w-[2000px]  w-[2100px]  ">
+      <div className="mx-auto   lg:w-[2000px]  w-[2100px]   ">
       <div  className="overflow-hidden">
-         <motion.div
-         style={{ display: "flex", gap: "20px" }}
-        animate={{ x : ["0%","-40%"]}}
-        transition={{ duration: 3, repeat: Infinity, ease: "linear",delay: 0 }}
-        className="flex flex-shrink-0"
-      >
-        {[ ...images,  ...images,].map((image:any, index:number) => {
+      <Marquee
+      delay={5}
+      pauseOnHover={true}
+      speed={250}>
+         {[ ...images,  ...images,].map((image:any, index:number) => {
           return <Image width={200} height={200} alt={`marqueImg${index}`}
-             className="object-contain pr-20" src={image} key={index} />
+             className="object-contain pr-20   cursor-pointer" src={image} key={index} />
         })}
-      </motion.div>
+      </Marquee>
       </div>
       </div>
     </section>

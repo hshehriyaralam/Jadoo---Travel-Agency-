@@ -34,7 +34,7 @@ const Category = () => {
        
 
         {/* Cards */}
-        <div className="flex  lg:flex-row flex-col  items-center justify-center p-4 gap-6    z-50 lg:mt-10  mt-5">
+        <div className="flex  lg:flex-row flex-col  items-center justify-center p-4 gap-6    lg:mt-10  mt-5">
           {categoriesData?.map((cat) => (
                <motion.div
                   key={cat.id}
@@ -44,7 +44,7 @@ const Category = () => {
                   >
             <div
               className={`rounded-3xl  w-[250px] h-[250px]  bg-white   z-40 flex flex-col items-center justify-center  p-4 relative   gap-3  hover:shadow-xl 
-                 cursor-pointer  transition-transform duration-400  hover:-translate-y-3  ${cat.shdow && "shadow-xl "}`}
+                 cursor-pointer  transition-transform duration-400  hover:-translate-y-6  ${cat.shdow && "shadow-xl "}`}
             >
               <div>
                 <Image

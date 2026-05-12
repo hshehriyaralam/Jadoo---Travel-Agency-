@@ -14,7 +14,7 @@ const Banner = () => {
      <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration:  0.6}}
+        transition={{ duration:  0.8}}
         >
     <section
     className="w-full max-auto overflow-hidden ">
@@ -22,6 +22,7 @@ const Banner = () => {
       <div className="bg-[#DFD7F9]/20 mx-auto rounded-tl-[100px]   lg:p-1 p-4
        w-[80%] flex flex-col  justify-center gap-10  h-90   z-40  relative ">
         <Image
+          
           src={share}
           alt="share"
           className="absolute  -right-4 top-0 z-50  w-8 lg:w-12"
@@ -67,7 +68,7 @@ const Banner = () => {
       <Image
         src={starts}
         alt="stars"
-        className="hidden lg:block absolute right-8 bottom-10  opacity-80"
+        className="hidden lg:block absolute right-8 bottom-10  opacity-70"
       />
     </div>
     </section>

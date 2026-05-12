@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full absolute top-0 left-0  z-50 "
+      className="w-full lg:absolute  sticky  lg:bg-transparent  bg-white  top-0 left-0  z-50  lg:py-0 py-0.1"
     >
       <div className=" w-full max-w-[1160px] mx-auto px-6 lg:px-8 h-[40px] py-10
     flex items-center justify-between  ">
@@ -83,7 +83,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setOpen(!open)}
-          className="lg:hidden z-50"
+          className="lg:hidden z-50  cursor-pointer "
         >
           {open ? (
             <X className="w-7 h-7 text-black" />
@@ -95,7 +95,7 @@ const Navbar = () => {
       <div
         className={`lg:hidden absolute top-0 right-0 h-screen w-[320px]   bg-white/90
         backdrop-blur-lg shadow-2xl 
-        ${open ? "opacity-100  duration-700  transition-transform tranlate-x-0" : "translate-x-0 opacity-0 overflow-x-hidden"}
+        ${open ? "opacity-100  transition  duration-400  tranlate-x-0" : "translate-x-0 opacity-0 overflow-x-hidden"}
         `}>
         <div className="flex flex-col gap-6 mt-28 px-8">
           {navLinks.map((link) => (
