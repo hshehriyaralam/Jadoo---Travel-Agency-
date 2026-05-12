@@ -1,9 +1,8 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 import { easyData, actions } from "@/data/easyAndFast";
-
 import backShadow from "@/public/easy/Group 589.png";
 import tourist from "@/public/easy/Rectangle17.jpg";
 import building from "@/public/easy/building 1.png";
@@ -16,7 +15,7 @@ const EasyAndFast = () => {
     <section 
       className="relative w-full overflow-hidden py-24   mx-auto ">
       <div
-        className=" relative w-full max-w-[1114px] h-[492px] mx-auto px-6 flex flex-col
+        className=" relative w-full max-w-[1114px] lg:h-[492px]   min-h-h-[492px] mx-auto px-6 flex flex-col
         lg:flex-row  items-center lg:items-start justify-between gap-y-16 gap-x-20   lg:p-6 p-3">
         <div
           className=" relative z-20 w-full max-w-[500px]">
@@ -33,8 +32,15 @@ const EasyAndFast = () => {
 
           <div className="flex flex-col gap-8 mt-10">
             {easyData?.map((data) => (
-              <div
+              <motion.div
                 key={data.id}
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration:  0.6}}
+                >
+
+              <div
+            
                 className="flex items-start gap-4">
                 <div className="shrink-0">
                   <Image
@@ -58,12 +64,15 @@ const EasyAndFast = () => {
                   </p>
                 </div>
               </div>
+               </motion.div>
+
             ))}
           </div>
         </div>
 
         <div
-          className="relative w-full max-w-[485px] flex items-center justify-center  lg:mt-0 mt-25">
+          className="relative w-full max-w-[485px] flex items-center justify-center
+            lg:mt-0 mt-25   ">
           <Image
             src={backShadow}
             alt="back-shadow"
@@ -71,8 +80,17 @@ const EasyAndFast = () => {
             "
           />
 
+          {/* both card div */}
+            <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration:  0.6}}
+                 className="w-full max-w-[485px]"
+                >
           <div
-            className=" relative z-20 w-full max-w-[370px] bg-white rounded-[28px] p-6 shadow-2xl
+            className=" relative z-20 w-full max-w-[370px] bg-white rounded-[28px] p-6 
+            cursor-pointer  transition-transform duration-400  hover:-translate-y-3  hover:shadow-3xl 
+            shadow-2xl
             "
           >
             <div className="relative w-full h-[170px] rounded-[24px] overflow-hidden">
@@ -85,7 +103,7 @@ const EasyAndFast = () => {
             </div>
 
 
-            <div className="mt-6 flex flex-col gap-5">
+            <div className="mt-6 flex flex-col gap-5 ">
               <div>
                 <p
                   className=" text-[#080809] font-poppins font-semibold text-[18px]"
@@ -100,7 +118,6 @@ const EasyAndFast = () => {
                 </p>
               </div>
 
-              {/* Actions */}
               <div className="flex items-center gap-4">
                 {actions?.map((img) => (
                   <div key={img.id}>
@@ -145,14 +162,16 @@ const EasyAndFast = () => {
           >
            
             <div
-              className="w-[52px] h-[52px] rounded-full overflow-hidden shrink-0">
+              className="w-[52px] h-[52px] rounded-full overflow-hidden shrink-0
+              
+              ">
               <Image
                 alt="card-logo"
                 src={seondCardLogo}
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 ">
               <div>
                 <p
                   className="text-[#84829A] text-[12px] font-poppins font-medium"
@@ -185,6 +204,7 @@ const EasyAndFast = () => {
               </div>
             </div>
           </div>
+         </motion.div>
         </div>
       </div>
     </section>

@@ -1,13 +1,18 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import { sellingData } from "@/data/topselling";
 import icon from "@/public/selling/navigatIcon.png";
 import Decore from "@/public/selling/sellDecore.png";
+import { motion } from "framer-motion";
+
+
 
 const TopSelling = () => {
   return (
     <section className="w-full mx-auto overflow-hidden">
-      <div  className="max-w-[1102px] h-[617px] mx-auto">
+      <div  className="max-w-[1102px] lg:h-[617px]  min-h-[617px] mx-auto  py-10  lg:py-0">
       <div className="flex flex-col items-center justify-center  gap-10">
         <div className="flex flex-col  items-center justify-center gap-2  ">
           <p className="text-[#5E6282] uppercase  font-poppins font-semibold  text-md  ">
@@ -21,9 +26,17 @@ const TopSelling = () => {
         {/*  selling cards  */}
         <div  className="flex flex-col lg:flex-row items-center justify-center  gap-8 relative  ">
           {sellingData?.map((sell) => (
+            <motion.div
+                key={sell.id}
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration:  0.6}}
+                  >
+
             <div
-              className="w-[280px] h-[400px]  shadow-xl   rounded-3xl  z-50  "
-              key={sell.id}
+              className="w-[280px] h-[400px]  shadow-xl   rounded-3xl  z-50 
+               cursor-pointer  transition-transform duration-400  hover:-translate-y-4  hover:shadow-2xl "
+              
             >
               <div className="h-70  w-full  rounded-3xl  bg-white">
                 <Image
@@ -50,6 +63,8 @@ const TopSelling = () => {
                 </div>
               </div>
             </div>
+           </motion.div>
+
           ))}
           
           <Image         

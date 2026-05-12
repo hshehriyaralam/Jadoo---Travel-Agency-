@@ -1,16 +1,20 @@
+"use client"
+
 import Image from "next/image";
 import React from "react";
 import group68 from "@/public/testimonials/Group61.png";
 import ArrowUp from "@/public/testimonials/Vector 2.svg";
 import ArrowDown from "@/public/testimonials/Vector 3.svg";
 import userImage from "@/public/testimonials/Image.png";
+import { motion } from "framer-motion";
+
 
 const Testimonials = () => {
   return (
     <section
     className="w-full  mx-auto lg:px-6 overflow-hidden  "
     >
-    <div className=" max-w-[1165] h-[356px]   flex  flex-col lg:flex-row  lg:items-start  items-center justify-center  mx-auto  ">
+    <div className=" max-w-[1165] lg:h-[356px]    min-h-[200px]  flex  flex-col lg:flex-row  lg:items-start  items-center justify-center  mx-auto  ">
       {/* left div */}
       <div className=" lg:p-10 p-6 mt-10">
         <p className="text-[#5E6282] font-poppins  font-semibold mb-2 text-center lg:text-left ">
@@ -30,7 +34,13 @@ const Testimonials = () => {
 
       {/* right  div */}
       <div className="  flex items-center  justify-center  gap-6 lg:p-10  p-2 ">
-        <div>
+        {/* <div> */}
+          <motion.div
+                          initial={{ opacity: 0, y: 100 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration:  0.6}}
+                          >
+
           <Image
             src={userImage}
             alt="user-profile"
@@ -39,7 +49,7 @@ const Testimonials = () => {
           />
 
           {/* first card */}
-          <div className="p-4 shadow-2xl lg:w-[420px] w-[300px]  min-h-[200px] rounded-xl bg-white z-50  relative   lg:mt-0 mt-4  ">
+          <div className="p-4 shadow-2xl lg:w-[420px] w-[300px]  min-h-[200px] rounded-xl bg-white z-50  relative   lg:mt-0 mt-4 cursor-pointer  transition-transform duration-500  hover:-translate-y-2  hover:shadow-2xl  ">
             <p>
               “On the Windows talking painted pasture yet its express parties
               use. Sure last upon he same as knew next. Of believed or diverted
@@ -66,7 +76,9 @@ const Testimonials = () => {
               <p>CEO of Red Button</p>
             </div>
           </div>
-        </div>
+           </motion.div>
+
+        {/* </div> */}
 
         {/* Arrows */}
         <div className="hidden lg:flex flex-col gap-12   cursor-pointer  relative  left-30">

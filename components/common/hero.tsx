@@ -8,6 +8,7 @@ import Ellipse from '@/public/hero/Ellipse 8.png'
 import { Button } from "../ui/button"
 import React from "react"
 import underline   from '@/public/hero/underline.png'
+import { motion, useInView } from "framer-motion";
 
 const Hero = () => {   
   return (
@@ -39,7 +40,7 @@ const Hero = () => {
           <Image 
             src={underline}
             alt="underline-image"
-            className="absolute top-16 left-50   w-[300px]  z-40"
+            className="hidden lg:block absolute top-16 left-50   w-[300px]  z-40"
             />
           <h1
             className="text-[#181E4B] font-[700]   text-[40px]  lg:text-[68px]  relative
@@ -58,11 +59,12 @@ const Hero = () => {
 
           <div  className="max-w-[379px] min-h-[60px]  flex flex-col lg:flex-row
             items-center gap-4 mx-auto lg:mx-0">
-            <Button className="bg-[#F1A501] text-white px-5 py-6  font-sans cursor-pointer" >
+            <Button className="bg-[#F1A501]   hover:bg-[#F1A501]/70 
+            cursor-pointer  transition-transform duration-500  hover:-translate-y-1   text-white px-5 py-6  font-sans cursor-pointer" >
               find out more
             </Button>
 
-            <div className="flex  cursor-pointer  lg:mt-5 mt-0"
+            <div className="flex  cursor-pointer  lg:mt-5 mt-0 cursor-pointer  transition-transform duration-500  hover:-translate-y-1 "
             >
               <Image
                 src={playButton}
@@ -85,8 +87,16 @@ const Hero = () => {
           flex items-center justify-center">
 
         
-          <div  className="relative">
-          <Image
+          <div
+          className="relative">
+      <motion.div
+      initial={{ opacity: 0, x: 70 }}
+      whileInView={{ opacity: 1, x: 10 }}
+      transition={{ duration:  0.6}}
+      >  
+      
+      
+      <Image
             src={Treveller}
             width={620}
             height={620}
@@ -94,6 +104,9 @@ const Hero = () => {
             className="relative z-10   right-0 lg:right-10  top-0 lg:-top-20 
              w-[420px]  lg:w-[620px]  h-auto"
             />
+
+    </motion.div>
+        
 
           <Image
             src={plane}

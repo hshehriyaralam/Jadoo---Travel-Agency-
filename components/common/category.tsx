@@ -4,13 +4,15 @@ import { categoriesData } from "@/data/categories";
 import Image from "next/image";
 import Rectangle from "@/public/category/Rectangle.png";
 import decore from "@/public/category/sideDecore.png";
+import { motion } from "framer-motion";
+
 
 
 const Category = () => {
 
   return (
     <section className="w-full mx-auto overflow-hidden ">
-      <div  className="max-w-[1228px] h-[525px] relative  mx-auto">
+      <div  className="max-w-[1228px] min-h-[525px]  lg:h-[525px] relative  mx-auto">
          <Image  
         src={decore}
         width={100}
@@ -34,24 +36,26 @@ const Category = () => {
         {/* Cards */}
         <div className="flex  lg:flex-row flex-col  items-center justify-center p-4 gap-6    z-50 lg:mt-10  mt-5">
           {categoriesData?.map((cat) => (
+               <motion.div
+                  key={cat.id}
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration:  0.6}}
+                  >
             <div
-              key={cat.id}
-              className={`rounded-3xl  w-[250px] h-[250px]  bg-white   z-40 flex flex-col items-center justify-center  p-4   gap-3 ${cat.shdow && "shadow-xl "}`}
+              className={`rounded-3xl  w-[250px] h-[250px]  bg-white   z-40 flex flex-col items-center justify-center  p-4 relative   gap-3  hover:shadow-xl 
+                 cursor-pointer  transition-transform duration-400  hover:-translate-y-3  ${cat.shdow && "shadow-xl "}`}
             >
               <div>
                 <Image
                   src={cat.image}
                   width={cat.imageWidth}
-                  // height={60}
                   alt="cat-logo"
-                  className=""
                 />
               </div>
               <div>
                 <p
-                  className={`text-[#1E1D4C] font-medium   text-[18px] text-center mb-2 
-                            ${cat.shdow ? "" : "mt-4"}
-                            `}
+                  className={`text-[#1E1D4C] font-medium   text-[18px] text-center mb-2   ${cat.shdow ? "" : "mt-4"}`}
                 >
                   {cat.titile}
                 </p>
@@ -60,6 +64,8 @@ const Category = () => {
                 </p>
               </div>
             </div>
+                </motion.div>
+
           ))}
         </div>
 

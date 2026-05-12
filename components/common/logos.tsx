@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import logoOne from "@/public/logos/logo-1.png";
 import logoTwo from "@/public/logos/logo-2.png";
@@ -5,6 +7,8 @@ import logoThree from "@/public/logos/logo-3.png";
 import logoFour from "@/public/logos/logo-4.png";
 import logoFive from "@/public/logos/logo-5.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 
 const Logos = () => {
   const logos = [
@@ -34,21 +38,31 @@ const Logos = () => {
       shadow: false,
     },
   ];
+
+
+  const images = [
+    logoOne,
+    logoTwo,
+    logoThree,
+    logoFour,
+    logoFive,
+    
+  ]
   return (
-    <section className="w-full   p-6 overflow-hidden  mx-auto  my-10">
-      <div
-      className="max-w-[1073px]   h-[162px]   mx-auto"
+    <section className="w-full   p-6 overflow-hidden  mx-auto  my-10  ">
+      <div className="mx-auto   lg:w-[2000px]  w-[2100px]  ">
+      <div  className="overflow-hidden">
+         <motion.div
+         style={{ display: "flex", gap: "20px" }}
+        animate={{ x : ["0%","-40%"]}}
+        transition={{ duration: 3, repeat: Infinity, ease: "linear",delay: 0 }}
+        className="flex flex-shrink-0"
       >
-      <div className="flex items-center justify-center lg:gap-8 gap-4 mx-auto  flex-wrap  
-      ">
-        {logos?.map((logo) => (
-          <div
-            className={`p-4`}
-            key={logo.id}
-          >
-            <Image alt="all-logos" src={logo.logo} />
-          </div>
-        ))}
+        {[ ...images,  ...images,].map((image:any, index:number) => {
+          return <Image width={200} height={200} alt={`marqueImg${index}`}
+             className="object-contain pr-20" src={image} key={index} />
+        })}
+      </motion.div>
       </div>
       </div>
     </section>

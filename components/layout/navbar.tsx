@@ -49,10 +49,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full absolute top-0 left-0  z-50  "
+      className="w-full absolute top-0 left-0  z-50 "
     >
       <div className=" w-full max-w-[1160px] mx-auto px-6 lg:px-8 h-[40px] py-10
-    flex items-center justify-between">
+    flex items-center justify-between  ">
         <Link href={"/"}>
           <Image
             src={logo}
@@ -93,9 +93,9 @@ const Navbar = () => {
         </button>
       </div>
       <div
-        className={`lg:hidden absolute top-0 right-0 h-screen w-[320px]  max-w-full bg-white/90
-        backdrop-blur-lg shadow-2xl transition-transform duration-300
-        ${open ? "translate-x-0 opacity-100 block" : "translate-x-full opacity-0"}
+        className={`lg:hidden absolute top-0 right-0 h-screen w-[320px]   bg-white/90
+        backdrop-blur-lg shadow-2xl 
+        ${open ? "opacity-100  duration-700  transition-transform tranlate-x-0" : "translate-x-0 opacity-0 overflow-x-hidden"}
         `}>
         <div className="flex flex-col gap-6 mt-28 px-8">
           {navLinks.map((link) => (
