@@ -92,7 +92,7 @@ const Navbar = () => {
           )} */}
 
           {!open && (
-            <Menu className="w-7 h-7 text-black" />
+            <Menu className="w-7 h-7 text-black  hover:text-orange-500   " />
           )}
         
         </button>
@@ -100,8 +100,8 @@ const Navbar = () => {
          
       </div>
       <div
-        className={`lg:hidden absolute top-20 right-0 min-h-auto pb-10 w-full   bg-white
-        backdrop-blur-lg shadow-2xl  overflow-x-hidden  
+        className={`lg:hidden absolute top-18 right-0 min-h-auto pb-10 w-full   bg-white
+        backdrop-blur-lg shadow-2xl  overflow-x-hidden   border-none  
         ${open ? " transition-transform -tranlate-y-0" : "-translate-y-150  "}
         duration-500 
         `}>
@@ -109,11 +109,12 @@ const Navbar = () => {
           onClick={() => setOpen(false)}
           className="lg:hidden z-50  cursor-pointer "
         >
-           <X className="w-7 h-7 text-black  absolute  right-4 top-4" />
+           <X className="w-7 h-7 text-black  absolute  right-4 top-4 hover:text-orange-500" />
         </button>
         <div className="flex flex-col gap-6 mt-14 px-8">
           {navLinks.map((link) => (
             <Link
+            className="max-w-30 "
               key={link.id}
               href={link.link}
               onClick={() => setOpen(false)}
