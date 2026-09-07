@@ -6,7 +6,7 @@ import Footer from "@/components/common/footer";
 export const metadata: Metadata = {
   title: "Best Travel Destinations in Europe | Jadoo",
   description:
-    "Explore the best travel destinations in Europe with Jadoo. Discover Rome, London, and European highlights with practical trip ideas and itinerary inspiration.",
+    "Explore the best travel destinations in Europe with Jadoo. Discover Rome, London, and European highlights with practical travel ideas, attractions, and itinerary inspiration.",
   alternates: {
     canonical: "/destinations",
   },
@@ -16,17 +16,35 @@ const destinations = [
   {
     name: "Rome, Italy",
     detail:
-      "Discover ancient landmarks, lively piazzas, world-famous museums, and classic Italian food. Rome is ideal for travelers who want to combine history, culture, and relaxed city exploration.",
+      "Discover ancient landmarks, lively piazzas, world-famous museums, and classic Italian food. Rome is ideal for travelers who want to combine history, culture, architecture, and relaxed city exploration.",
+    highlights: [
+      "Ancient historical landmarks",
+      "Italian cuisine and local markets",
+      "Museums and cultural attractions",
+      "Beautiful plazas and city streets",
+    ],
   },
   {
     name: "London, United Kingdom",
     detail:
       "Explore museums, royal history, neighborhood markets, historic streets, and unforgettable views of the Thames. London offers a mix of culture, entertainment, shopping, and local experiences.",
+    highlights: [
+      "Historic landmarks and royal attractions",
+      "Museums and cultural experiences",
+      "Shopping and local markets",
+      "Thames views and city walks",
+    ],
   },
   {
     name: "European Highlights",
     detail:
       "Build a longer European itinerary with flexible stops across multiple cities. Combine famous landmarks, scenic rail journeys, local food, cultural experiences, and time to explore at your own pace.",
+    highlights: [
+      "Multi-city European itineraries",
+      "Scenic train journeys",
+      "Local food and cultural experiences",
+      "Flexible travel planning",
+    ],
   },
 ];
 
@@ -46,22 +64,33 @@ export default function DestinationsPage() {
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
           Discover inspiring places and practical travel ideas for your next
-          holiday. Whether you are planning a short city break or a longer
-          European adventure, Jadoo helps you explore destinations and build
-          an itinerary that matches your interests and travel style.
+          holiday. Whether you are planning a short city break, a cultural
+          getaway, or a longer European adventure, Jadoo helps you explore
+          destinations and find ideas for creating an itinerary that matches
+          your interests, travel style, and available time.
         </p>
 
-        <section className="mt-10 max-w-3xl">
+        <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Explore European destinations
+            Explore popular European travel destinations
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
-            Europe offers a wide range of experiences for every type of
-            traveler. From historic cities and famous landmarks to local food,
-            museums, markets, and scenic journeys, each destination has
-            something different to offer. Start by choosing a place that
-            matches the type of trip you want to experience.
+            Europe is home to some of the world's most memorable travel
+            destinations. Travelers can explore centuries of history, famous
+            architecture, local cuisine, museums, markets, and unique cultural
+            experiences in a relatively small area. Choosing the right
+            destination depends on what you want from your holiday and how much
+            time you have available.
+          </p>
+
+          <p className="mt-4 leading-7 text-[#5E6282]">
+            For a history-focused trip, cities such as Rome offer ancient
+            landmarks and cultural attractions. Travelers interested in
+            museums, shopping, entertainment, and modern city life may prefer
+            London. If you want to visit several countries during one holiday,
+            a flexible European itinerary can combine multiple cities and
+            experiences.
           </p>
         </section>
 
@@ -69,11 +98,14 @@ export default function DestinationsPage() {
           aria-labelledby="destination-list"
           className="mt-14"
         >
-          <h2 id="destination-list" className="sr-only">
-            Popular travel destinations
+          <h2
+            id="destination-list"
+            className="font-volkhov text-3xl font-bold"
+          >
+            Popular destinations
           </h2>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
             {destinations.map((destination) => (
               <article
                 key={destination.name}
@@ -86,23 +118,60 @@ export default function DestinationsPage() {
                 <p className="mt-4 leading-7 text-[#5E6282]">
                   {destination.detail}
                 </p>
+
+                <h4 className="mt-6 font-semibold">
+                  What to experience
+                </h4>
+
+                <ul className="mt-3 space-y-2 text-sm leading-6 text-[#5E6282]">
+                  {destination.highlights.map((highlight) => (
+                    <li key={highlight}>• {highlight}</li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="mt-14 max-w-3xl">
+        <section className="mt-14 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            How to choose your destination
+            How to choose the right destination
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
-            Think about the experience you want before choosing your
-            destination. History lovers may prefer cities with ancient
-            landmarks and museums, while food lovers can focus on places known
-            for local cuisine and markets. If you enjoy exploring multiple
-            countries, a flexible European itinerary can help you experience
-            several destinations during one trip.
+            Start by thinking about the type of experience you want. If you
+            enjoy history and architecture, choose destinations with important
+            landmarks, museums, and historic neighborhoods. If food is an
+            important part of your trip, look for cities with a strong local
+            food culture, markets, and restaurants.
+          </p>
+
+          <p className="mt-4 leading-7 text-[#5E6282]">
+            Your available travel time is also important. A short holiday may
+            work best with one city so you can explore without rushing. Longer
+            trips give you more flexibility to visit several destinations.
+            Consider transportation between cities, the activities you want to
+            enjoy, and how much free time you would like during your journey.
+          </p>
+        </section>
+
+        <section className="mt-14 max-w-4xl">
+          <h2 className="font-volkhov text-3xl font-bold">
+            Plan your European adventure
+          </h2>
+
+          <p className="mt-4 leading-7 text-[#5E6282]">
+            Once you have selected a destination, the next step is to organize
+            your travel plan. Make a list of the places you want to visit,
+            decide which experiences are most important, and leave some space
+            for discovering local neighborhoods and unexpected attractions.
+            A good itinerary should provide direction without making every
+            minute of your holiday feel scheduled.
+          </p>
+
+          <p className="mt-4 leading-7 text-[#5E6282]">
+            Explore our destination ideas first, then use the planning page to
+            think about your itinerary and prepare for your next journey.
           </p>
         </section>
 
@@ -118,3 +187,4 @@ export default function DestinationsPage() {
     </div>
   );
 }
+
