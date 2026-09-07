@@ -6,7 +6,7 @@ import Footer from "@/components/common/footer";
 export const metadata: Metadata = {
   title: "Best Travel Destinations in Europe | Jadoo",
   description:
-    "Explore the best travel destinations in Europe with Jadoo. Discover Rome, London, and European highlights with practical travel ideas, attractions, and itinerary inspiration.",
+    "Explore top European destinations with Jadoo. Discover Rome, London, attractions, travel ideas, and inspiration for your next trip.",
   alternates: {
     canonical: "/destinations",
   },
