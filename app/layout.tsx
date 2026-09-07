@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/common/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,9 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jadoo",
-  description: "Jadoo - Travel Agency",
-  icons : '/Group.svg'
+  metadataBase: new URL("https://jadoo-travel-agency-one.vercel.app"),
+  title: "Jadoo Travel Agency | Trips, Tours and Holiday Packages",
+  description:
+    "Plan memorable trips with Jadoo Travel Agency. Explore inspiring destinations, compare holiday ideas, and book your next adventure with ease.",
+  alternates: {
+    canonical: "/",
+  },
+  icons: "/Group.svg",
 };
 
 export default function RootLayout({

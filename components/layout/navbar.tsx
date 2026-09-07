@@ -12,37 +12,37 @@ const Navbar = () => {
     {
       id: 1,
       text: "Destinations",
-      link: "/",
+      link: "/destinations",
       border: false,
     },
     {
       id: 2,
       text: "Hotels",
-      link: "/",
+      link: "/destinations#hotels",
       border: false,
     },
     {
       id: 3,
       text: "Flight",
-      link: "/",
+      link: "/destinations#flights",
       border: false,
     },
     {
       id: 4,
       text: "Booking",
-      link: "/",
+      link: "/booking",
       border: false,
     },
     {
       id: 5,
       text: "Login",
-      link: "/",
+      link: "/booking#contact",
       border: false,
     },
     {
       id: 6,
       text: "SignUp",
-      link: "/",
+      link: "/booking",
       border: true,
     },
   ];
