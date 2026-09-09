@@ -4,10 +4,8 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
-  // title: "Best Travel Destinations in Europe | Jadoo",
   title: "Best Travel Destinations 2024 for Families in Europe",
-  // description: "Explore top European destinations with Jadoo. Discover Rome, London, attractions, travel ideas, and inspiration for your next trip.",
-  description: "Plan your 2024 family vacation in Europe with Jadoo Travel – affordable, family-friendly destinations, expert itineraries, and exclusive deals",
+  description: "Plan your 2024 family vacation in Europe with Jadoo Travel – discover the best family-friendly destinations, luxury itineraries, and exclusive deals for unforgettable trips",
   alternates: {
     canonical: "/destinations",
   },
