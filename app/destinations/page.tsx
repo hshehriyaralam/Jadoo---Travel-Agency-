@@ -5,7 +5,7 @@ import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
   title: "Best Travel Destinations 2024 for Families in Europe",
-  description: "Plan your 2024 family vacation in Europe with Jadoo Travel – discover the best family-friendly destinations, luxury itineraries, and exclusive deals for unforgettable trips",
+  description: "Discover the best travel destinations with Jadoo Travel. Explore family-friendly trips, luxury itineraries, and exclusive travel deals for your next adventure.",
   alternates: {
     canonical: "/destinations",
   },
@@ -73,7 +73,7 @@ export default function DestinationsPage() {
 
         <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-           Explore Popular European Travel Destinations – Plan Your 2024 Adventure
+           Family Vacation Europe 2024: Explore the Best Family‑Friendly Destinations and Plan Your Adventure
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

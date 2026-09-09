@@ -38,7 +38,7 @@ const TopSelling = () => {
                   <div className="h-70  w-full  rounded-3xl  bg-white">
                     <Image
                       src={sell.image}
-                      alt="sell-image"
+                      alt="London travel packages"
                       className="w-full h-full  rounded-t-3xl"
                     />
                   </div>
@@ -53,7 +53,7 @@ const TopSelling = () => {
                     </div>
 
                     <div className="flex items-center gap-2 p-2  ">
-                      <Image width={15} height={15} alt="icon" src={icon} />
+                      <Image width={15} height={15} alt="Europe travel packages" src={icon} />
                       <p className="text-[#5E6282]  font-medium text-md">
                         {sell.days} Days Trip
                       </p>
@@ -64,7 +64,7 @@ const TopSelling = () => {
             ))}
 
             <Image
-              alt="Decore"
+              alt="London vacation packages"
               src={Decore}
               className="absolute -right-15  lg:w-26 w-22 "
             />

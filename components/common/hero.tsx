@@ -16,11 +16,11 @@ const Hero = () => {
       <Image
         className="absolute left-0 top-0    w-[600px] h-[600px] opacity-100 "
         src={Ellipse}
-        alt="Affordable travel packages"
+        alt="Affordable travel"
       />
       <Image
         src={Decore}
-        alt="Affordable travel packages"
+        alt="travel booking websit"
         className="absolute right-0  lg:max-w-[48%]   xl:max-w-[60%]  xl:max-w-[60%] 
              3xl:max-w-[60%] lg:h-[550px]"
       />
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="relative ">
             <Image
               src={underline}
-              alt="Affordable travel packages"
+              alt="travel packages"
               className="hidden lg:block absolute top-16 left-50   w-[300px]  z-40"
             />
             <h1
@@ -76,7 +76,7 @@ const Hero = () => {
                 src={playButton}
                 width={60}
                 height={60}
-                alt="Affordable travel packages"
+                alt="personalized travel "
                 className="border"
               />
 
@@ -102,7 +102,7 @@ const Hero = () => {
                 src={Treveller}
                 width={620}
                 height={620}
-                alt="Affordable travel packages"
+                alt="travel packages Pakistan"
                 className="relative z-10   right-0 lg:right-10  top-0 lg:-top-20 
              w-[420px]  lg:w-[620px]  h-auto"
               />
@@ -112,7 +112,7 @@ const Hero = () => {
               src={plane}
               width={140}
               height={140}
-              alt="Affordable travel packages"
+              alt="packages Pakistan"
               className="absolute  top-0 left-16  lg:-top-10 lg:-left-12
             z-20   w-[80px] lg:w-[140px]  h-auto"
             />

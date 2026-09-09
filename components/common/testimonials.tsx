@@ -88,7 +88,7 @@ const Testimonials = () => {
               >
                 <Image
                   src={currentTestimonial.Image}
-                  alt="user-profile"
+                  alt="Rome travel packages"
                   width={60}
                   className="lg:relative lg:right-10  lg:mx-0   mx-auto "
                 />

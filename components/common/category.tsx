@@ -16,7 +16,7 @@ const Category = () => {
          <Image  
         src={decore}
         width={100}
-        alt="travel agency near me in pakistan"
+        alt="Jadoo Travel Agency – Affordable Travel Packages Near You in Pakistan"
         className=" hidden lg:block absolute  right-0"   
         />
       <div className="flex flex-col items-center justify-center  gap-6">
@@ -50,7 +50,7 @@ const Category = () => {
                 <Image
                   src={cat.image}
                   width={cat.imageWidth}
-                  alt="cat-logo"
+                  alt="travel packages"
                 />
               </div>
               <div>

@@ -13,19 +13,19 @@ export const easyData = [
         id :1 ,
         image : imageOne,
         title : "Choose Destination",
-        desciption : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "
+        desciption : "Select your preferred destination and explore the best travel options available for your trip."
     },
       {
         id :2 ,
         image : imageTwo,
         title : "Make Payment",
-        desciption : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "
+        desciption : "Complete your booking securely and confirm your trip with a simple payment process"
     },
       {
         id :3 ,
         image : imageThree,
         title : "Reach Airport on Selected Date",
-        desciption : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. "
+        desciption : "Arrive at the airport on your selected date and get ready to begin your exciting journey."
     },
 ]
 
