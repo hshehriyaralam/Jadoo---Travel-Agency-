@@ -25,7 +25,7 @@ export default function BookingPage() {
 
         <h1 className="mt-3 font-volkhov text-4xl font-bold md:text-6xl">
           {/* Plan your next journey with confidence. */}
-          Cheap Flight Booking – Save on Your Next Journey
+           Cheap Flight Booking – Save on Your Next Journey
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -35,12 +35,12 @@ export default function BookingPage() {
           travel plan. Whether you are traveling for a weekend or planning a
           longer international adventure, having a clear plan can make your
           journey more comfortable and enjoyable. */}
-          Our hotel booking platform provides instant reservations, best‑price guarantees, and 24/7 support for travelers worldwide.  
+          Our hotel booking platform offers instant reservations, best‑price guarantees, and 24/7 support for travelers worldwide. 
         </p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Create a travel plan that works for you
+            Create a travel plan that works for you – Simple steps for planning your trip
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

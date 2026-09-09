@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://jadoo-travel-agency-one.vercel.app"),
   title: "Travel Agency Services | Jadoo Travel",
-  description:"Discover custom travel packages tailored to your preferences. Book with Jadoo Travel Agency for unforgettable journeys – personalized itineraries for every traveler",
+  description:"Explore custom travel packages tailored to your preferences with Jadoo Travel Agency – unforgettable journeys and personalized itineraries",
   alternates: {
     canonical: "/",
   },

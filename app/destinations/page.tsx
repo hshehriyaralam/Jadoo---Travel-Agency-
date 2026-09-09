@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const destinations = [
   {
-    name: "Rome, Italy",
+    name: "Rome, Italy – Ancient Landmarks & Family Fun",
     detail:
       "Discover ancient landmarks, lively piazzas, world-famous museums, and classic Italian food. Rome is ideal for travelers who want to combine history, culture, architecture, and relaxed city exploration.",
     highlights: [
@@ -26,7 +26,7 @@ const destinations = [
     ],
   },
   {
-    name: "London, United Kingdom",
+    name: "London, United Kingdom – Museums, Shopping & Family Entertainment",
     detail:
       "Explore museums, royal history, neighborhood markets, historic streets, and unforgettable views of the Thames. London offers a mix of culture, entertainment, shopping, and local experiences.",
     highlights: [
@@ -61,7 +61,7 @@ export default function DestinationsPage() {
 
         <h1 className="mt-3 max-w-3xl font-volkhov text-4xl font-bold md:text-6xl">
           {/* Find the best travel destinations for your next journey. */}
-          Family Vacation Destinations for 2024
+          Family Vacation Destinations for 2024 – Explore Europe’s Best Family-Friendly Spots
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -70,12 +70,12 @@ export default function DestinationsPage() {
           getaway, or a longer European adventure, Jadoo helps you explore
           destinations and find ideas for creating an itinerary that matches
           your interests, travel style, and available time. */}
-            Welcome to our destinations page. Explore our curated luxury travel packages featuring five‑star resorts, private tours, and exclusive experiences tailored for discerning travelers
+            Welcome to our destinations page. Discover Luxury Travel Packages with Five‑Star Resorts, Private Tours, and Exclusive Experiences.
         </p>
 
         <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Explore popular European travel destinations
+           Explore Popular European Travel Destinations – Plan Your 2024 Adventure
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
