@@ -14,7 +14,7 @@ import carFour from "@/public/category/card4.png";
     },
     {
       id: 2,
-      titile: "Best Flights",
+      titile: "Best Flights - Book with confidence and save on airfare",
       description:
         "Engrossed listening. Park gate sell they west hard for the.",
       image: carTwo,

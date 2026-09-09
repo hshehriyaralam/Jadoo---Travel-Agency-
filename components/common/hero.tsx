@@ -49,7 +49,7 @@ const Hero = () => {
             leading-tight  max-w-[545px] mx-auto lg:mx-0  z-50 "
             >
               {/* Travel, enjoy and live a new and full life */}
-              Personalized itineraries – Tailored travel experiences for every traveler
+              Custom itineraries – Tailored travel experiences for every traveler
             </h1>
           </div>
 

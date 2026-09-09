@@ -5,9 +5,9 @@ import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
   // title: "Plan Your Trip | Jadoo Travel Agency",
-  title: "Travel Booking Services | Jadoo Travel",
+  title: "Cheap Flight Booking Services | Jadoo Travel",
   description:
-    "Book your next trip with ease using our online travel booking platform. Secure, fast, and reliable service for all destinations",
+    "Book instant hotel reservations with Jadoo Travel – secure, fast, and reliable service for all destinations",
   alternates: {
     canonical: "/booking",
   },
