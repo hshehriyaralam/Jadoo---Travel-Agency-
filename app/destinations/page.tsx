@@ -5,9 +5,9 @@ import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
   // title: "Best Travel Destinations in Europe | Jadoo",
-  title: "Explore Travel Destinations 2024 | Jadoo Travel",
+  title: "best travel destinations 2024 for families",
   // description: "Explore top European destinations with Jadoo. Discover Rome, London, attractions, travel ideas, and inspiration for your next trip.",
-  description: "Discover the best travel destinations for your next adventure. Get personalized itineraries and expert travel tips from Jadoo Travel.",
+  description: "Discover affordable travel destinations worldwide. Get expert tips, budget itineraries, and exclusive deals from Jadoo Travel",
   alternates: {
     canonical: "/destinations",
   },
@@ -61,7 +61,7 @@ export default function DestinationsPage() {
 
         <h1 className="mt-3 max-w-3xl font-volkhov text-4xl font-bold md:text-6xl">
           {/* Find the best travel destinations for your next journey. */}
-           Travel Itinerary Planner for Your Next Trip
+          Family Vacation Destinations for 2024
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -70,7 +70,7 @@ export default function DestinationsPage() {
           getaway, or a longer European adventure, Jadoo helps you explore
           destinations and find ideas for creating an itinerary that matches
           your interests, travel style, and available time. */}
-           Explore our curated list of destinations and start planning your adventure today. We also offer custom travel packages tailored to your preferences, ensuring a memorable journey.
+            Welcome to our destinations page. Explore our curated luxury travel packages featuring five‑star resorts, private tours, and exclusive experiences tailored for discerning travelers
         </p>
 
         <section className="mt-12 max-w-4xl">
