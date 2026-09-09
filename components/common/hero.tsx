@@ -16,11 +16,11 @@ const Hero = () => {
       <Image
         className="absolute left-0 top-0    w-[600px] h-[600px] opacity-100 "
         src={Ellipse}
-        alt="Ellipse"
+        alt="travel agency near me"
       />
       <Image
         src={Decore}
-        alt="Decore"
+        alt="travel agency near me"
         className="absolute right-0  lg:max-w-[48%]   xl:max-w-[60%]  xl:max-w-[60%] 
              3xl:max-w-[60%] lg:h-[550px]"
       />
@@ -48,15 +48,14 @@ const Hero = () => {
               className="text-[#181E4B] font-[700]   text-[40px]  lg:text-[68px]  relative
             leading-tight  max-w-[545px] mx-auto lg:mx-0  z-50 "
             >
-              Travel, enjoy and live a new and full life
+              {/* Travel, enjoy and live a new and full life */}
+               Best Travel Agency for Your Next Adventure
             </h1>
           </div>
 
           <p className="text-[#5E6282] font-[400] leading-[24px] text-[14px] max-w-[430px] mx-auto lg:mx-0">
             {" "}
-            Built Wicket longer admire do barton vanity itself do in it.
-            Preferred to sportsmen it engrossed listening. Park gate sell they
-            west hard for the.
+             Welcome to Jadoo Travel Agency, your trusted partner for unforgettable journeys. Explore our affordable travel deals and save on your next adventure
           </p>
 
           <div
@@ -75,7 +74,7 @@ const Hero = () => {
                 src={playButton}
                 width={60}
                 height={60}
-                alt="play button"
+                alt="travel agency near me"
                 className="border"
               />
 

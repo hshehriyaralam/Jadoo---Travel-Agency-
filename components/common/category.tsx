@@ -16,7 +16,7 @@ const Category = () => {
          <Image  
         src={decore}
         width={100}
-        alt="side-decore"
+        alt="travel agency near me in pakistan"
         className=" hidden lg:block absolute  right-0"   
         />
       <div className="flex flex-col items-center justify-center  gap-6">

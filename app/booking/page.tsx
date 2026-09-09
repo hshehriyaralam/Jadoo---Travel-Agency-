@@ -4,9 +4,10 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
-  title: "Plan Your Trip | Jadoo Travel Agency",
+  // title: "Plan Your Trip | Jadoo Travel Agency",
+  title: "Travel Booking Services | Jadoo Travel",
   description:
-    "Plan your next holiday with Jadoo Travel Agency. Explore destinations, organize your itinerary, and get practical travel ideas for a memorable journey.",
+    "Book your next trip with ease using our online travel booking platform. Secure, fast, and reliable service for all destinations",
   alternates: {
     canonical: "/booking",
   },
@@ -23,16 +24,18 @@ export default function BookingPage() {
         </p>
 
         <h1 className="mt-3 font-volkhov text-4xl font-bold md:text-6xl">
-          Plan your next journey with confidence.
+          {/* Plan your next journey with confidence. */}
+          Cheap Flight Booking – Save on Your Next Journey
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
-          Planning a holiday becomes easier when you know where you want to go,
+          {/* Planning a holiday becomes easier when you know where you want to go,
           what you want to experience, and how much time you have. Jadoo helps
           you start with destination ideas and turn them into a practical
           travel plan. Whether you are traveling for a weekend or planning a
           longer international adventure, having a clear plan can make your
-          journey more comfortable and enjoyable.
+          journey more comfortable and enjoyable. */}
+          Our hotel booking platform provides instant reservations, best‑price guarantees, and 24/7 support for travelers worldwide.  
         </p>
 
         <section className="mt-12 max-w-3xl">
