@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   // title: "Best Travel Destinations in Europe | Jadoo",
   title: "Best Travel Destinations 2024 for Families in Europe",
   // description: "Explore top European destinations with Jadoo. Discover Rome, London, attractions, travel ideas, and inspiration for your next trip.",
-  description: "Discover affordable family-friendly travel destinations in Europe. Get expert tips, budget itineraries, and exclusive deals from Jadoo Travel",
+  description: "Plan your 2024 family vacation in Europe with Jadoo Travel – affordable, family-friendly destinations, expert itineraries, and exclusive deals",
   alternates: {
     canonical: "/destinations",
   },
