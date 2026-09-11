@@ -50,7 +50,7 @@ const Category = () => {
                 <Image
                   src={cat.image}
                   width={cat.imageWidth}
-                  alt="travel packages"
+                  alt={`${cat.titile} travel service`}
                 />
               </div>
               <div>

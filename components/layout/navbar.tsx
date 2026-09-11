@@ -56,7 +56,7 @@ const Navbar = () => {
         <Link href={"/"}>
           <Image
             src={logo}
-            alt="Jadoo Travel Agency logo"
+            alt="Jadoo Travel Agency logo – Pakistani travel agency"
             className="object-contain"
           />
         </Link>

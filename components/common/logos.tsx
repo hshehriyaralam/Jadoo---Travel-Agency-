@@ -56,7 +56,7 @@ const Logos = () => {
       pauseOnHover={true}
       speed={250}>
          {[ ...images,  ...images,].map((image:any, index:number) => {
-          return <Image width={200} height={200} alt={`marqueImg${index}`}
+          return <Image width={200} height={200} alt={`Jadoo Travel partner logo ${index + 1}`}
              className="object-contain pr-20   cursor-pointer" src={image} key={index} />
         })}
       </Marquee>
