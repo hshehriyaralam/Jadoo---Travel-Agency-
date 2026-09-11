@@ -5,7 +5,7 @@ import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
   title: "Cheap Flight Booking – Lowest Prices Guaranteed",
-  description:"Book cheap flight and hotel reservations instantly with Jadoo Travel – secure, fast, and reliable service for all destinations",
+  description: "Book cheap flight booking and hotel reservations instantly with Jadoo Travel – secure, fast, and reliable service for all destinations.",
   alternates: {
     canonical: "/booking",
   },

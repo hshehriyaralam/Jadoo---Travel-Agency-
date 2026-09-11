@@ -4,8 +4,8 @@ import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
 
 export const metadata: Metadata = {
-  title: "Best Travel Destinations 2024 for Families in Europe",
-  description: "Discover the best travel destinations with Jadoo Travel. Explore family-friendly trips, luxury itineraries, and exclusive travel deals for your next adventure.",
+  title: "Best Family-Friendly Europe Travel Destinations | Jadoo Travel",
+  description: "Plan family-friendly Europe travel with Jadoo Travel. Explore luxury itineraries, private tours, five-star resorts, and unforgettable family adventures.",
   alternates: {
     canonical: "/destinations",
   },
@@ -59,7 +59,7 @@ export default function DestinationsPage() {
 
         <h1 className="mt-3 max-w-3xl font-volkhov text-4xl font-bold md:text-6xl">
           {/* Find the best travel destinations for your next journey. */}
-          Family Vacation Destinations for 2024 – Explore Europe’s Best Family-Friendly Spots
+          Family-Friendly Europe Travel Destinations – Plan Your Family Adventure
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -73,7 +73,7 @@ export default function DestinationsPage() {
 
         <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-           Family Vacation Europe 2024: Explore the Best Family‑Friendly Destinations and Plan Your Adventure
+           Family-Friendly Europe Travel: Explore Top Destinations and Plan Your Adventure
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

@@ -20,7 +20,7 @@ const Hero = () => {
       />
       <Image
         src={Decore}
-        alt="travel booking websit"
+        alt="Jadoo Travel Agency travel booking"
         className="absolute right-0  lg:max-w-[48%]   xl:max-w-[60%]  xl:max-w-[60%] 
              3xl:max-w-[60%] lg:h-[550px]"
       />
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="relative ">
             <Image
               src={underline}
-              alt="travel packages"
+              alt="Custom travel packages"
               className="hidden lg:block absolute top-16 left-50   w-[300px]  z-40"
             />
             <h1
@@ -76,7 +76,7 @@ const Hero = () => {
                 src={playButton}
                 width={60}
                 height={60}
-                alt="personalized travel "
+                alt="Personalized travel demo"
                 className="border"
               />
 
@@ -102,7 +102,7 @@ const Hero = () => {
                 src={Treveller}
                 width={620}
                 height={620}
-                alt="travel packages Pakistan"
+                alt="Custom travel packages in Pakistan"
                 className="relative z-10   right-0 lg:right-10  top-0 lg:-top-20 
              w-[420px]  lg:w-[620px]  h-auto"
               />
@@ -112,7 +112,7 @@ const Hero = () => {
               src={plane}
               width={140}
               height={140}
-              alt="packages Pakistan"
+              alt="Travel packages in Pakistan"
               className="absolute  top-0 left-16  lg:-top-10 lg:-left-12
             z-20   w-[80px] lg:w-[140px]  h-auto"
             />
