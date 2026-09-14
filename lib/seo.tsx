@@ -4,12 +4,21 @@ export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data),
+      }}
     />
   );
 }
 
+export function jsonLd(data: Record<string, unknown>) {
+  return {
+    __html: JSON.stringify(data),
+  };
+}
+
 export const organizationSchema = {
+  "@context": "https://schema.org",
   "@type": "TravelAgency",
   "@id": `${siteUrl}/#organization`,
   name: "Jadoo Travel Agency",
@@ -20,16 +29,22 @@ export const organizationSchema = {
 };
 
 export const websiteSchema = {
+  "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": `${siteUrl}/#website`,
   url: siteUrl,
   name: "Jadoo Travel Agency",
-  publisher: { "@id": `${siteUrl}/#organization` },
+  publisher: {
+    "@id": `${siteUrl}/#organization`,
+  },
   inLanguage: "en",
 };
 
-export function breadcrumbSchema(items: Array<{ name: string; path: string }>) {
+export function breadcrumbSchema(
+  items: Array<{ name: string; path: string }>
+) {
   return {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
       "@type": "ListItem",
