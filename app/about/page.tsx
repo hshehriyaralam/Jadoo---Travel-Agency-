@@ -2,12 +2,36 @@
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
+import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About Jadoo Travel Agency",
   description:
-    "Learn how Jadoo helps travelers discover destinations and plan memorable holidays with clear, inspiring trip ideas.",
+    "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays with practical trip ideas.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    type: "website",
+    title: "About Jadoo Travel Agency",
+    description:
+      "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays.",
+    url: `${siteUrl}/about`,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "About Jadoo Travel Agency",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Jadoo Travel Agency",
+    description:
+      "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays.",
+    images: ["/og-image.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function AboutPage() {

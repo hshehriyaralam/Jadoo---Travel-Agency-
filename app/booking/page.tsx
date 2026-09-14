@@ -2,19 +2,74 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
+import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Cheap Flight Booking – Lowest Prices Guaranteed",
-  description: "Book cheap flight booking and hotel reservations instantly with Jadoo Travel – secure, fast, and reliable service for all destinations.",
+  title: "Book Cheap Flights & Save | Jadoo Travel",
+  description:
+    "Find cheap flight booking options, travel planning ideas, and reliable support with Jadoo Travel Agency.",
   alternates: {
     canonical: "/booking",
   },
+  openGraph: {
+    type: "website",
+    title: "Book Cheap Flights & Save | Jadoo Travel",
+    description:
+      "Find cheap flight booking options and plan your next journey with Jadoo Travel Agency.",
+    url: `${siteUrl}/booking`,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Cheap flight booking with Jadoo Travel",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Book Cheap Flights & Save | Jadoo Travel",
+    description:
+      "Find cheap flight booking options and plan your next journey with Jadoo Travel Agency.",
+    images: ["/og-image.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function BookingPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationSchema,
+      {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/booking#webpage`,
+        url: `${siteUrl}/booking`,
+        name: "Book Cheap Flights & Save | Jadoo Travel",
+        description:
+          "Find cheap flight booking options and plan your next journey with Jadoo Travel Agency.",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+      },
+      {
+        "@type": "Service",
+        "@id": `${siteUrl}/booking#flight-booking-service`,
+        name: "Flight Booking",
+        serviceType: "Flight booking",
+        provider: { "@id": `${siteUrl}/#organization` },
+        url: `${siteUrl}/booking`,
+        areaServed: "Worldwide",
+      },
+      breadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "Booking", path: "/booking" },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white text-[#181E4B]">
       <Navbar />
+      <JsonLd data={structuredData} />
 
       <main className="mx-auto max-w-[900px] px-6 pb-24 pt-28">
         <p className="font-poppins font-semibold uppercase text-[#DF6951]">
@@ -23,7 +78,7 @@ export default function BookingPage() {
 
         <h1 className="mt-3 font-volkhov text-4xl font-bold md:text-6xl">
           {/* Plan your next journey with confidence. */}
-           Cheap Flight Booking – Save on Your Next Journey
+           Cheap Flight Booking & Travel Planning
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -33,12 +88,12 @@ export default function BookingPage() {
           travel plan. Whether you are traveling for a weekend or planning a
           longer international adventure, having a clear plan can make your
           journey more comfortable and enjoyable. */}
-          Our hotel booking platform offers instant reservations, best‑price guarantees, and 24/7 support for travelers worldwide. 
+          Explore flight booking options, compare your travel needs, and organize the key details of your next journey with Jadoo Travel Agency. 
         </p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Create a travel plan that works for you – Simple steps for planning your trip
+            Plan Your Trip Around Your Budget and Schedule
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -60,7 +115,7 @@ export default function BookingPage() {
 
         <section className="mt-14">
           <h2 className="font-volkhov text-3xl font-bold">
-            Simple steps for planning your trip
+            3 Simple Steps to Plan Your Trip
           </h2>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -98,7 +153,7 @@ export default function BookingPage() {
 
         <section className="mt-14 max-w-3xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Tips for building a better itinerary
+            Tips for Building a Better Itinerary
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -119,7 +174,7 @@ export default function BookingPage() {
 
         <section className="mt-14 max-w-3xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Start planning your holiday
+            Start Planning Your Holiday
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

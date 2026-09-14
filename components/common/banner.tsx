@@ -24,7 +24,7 @@ const Banner = () => {
         <Image
           
           src={share}
-          alt="travel agency"
+          alt="Jadoo Travel newsletter decoration"
           className="absolute  -right-4 top-0 z-50  w-8 lg:w-12"
         />
         <div >
@@ -37,12 +37,12 @@ const Banner = () => {
 
         <Image
           src={ring}
-          alt="Travel Agency"
+          alt="Jadoo Travel newsletter ring decoration"
           className="hidden lg:block absolute  top-13  rotate-90 "
         />
         <Image
           src={ring}
-          alt="online travel agency"
+          alt="Online travel newsletter decoration"
           className="absolute   right-0  z-40"
         />
 
@@ -50,7 +50,7 @@ const Banner = () => {
           <div className="flex items-center justify-center gap-2  bg-white rounded-xl
             
           lg:py-3.5 lg:px-6  px-3 py-1">
-            <Image alt="travel booking agency" src={email}  />
+            <Image alt="Email icon for Jadoo Travel newsletter" src={email}  />
             <input
               type="email"
               placeholder="Your email"
@@ -67,7 +67,7 @@ const Banner = () => {
 
       <Image
         src={starts}
-        alt="travel booking website"
+        alt="Jadoo Travel newsletter decorative stars"
         className="hidden lg:block absolute right-8 bottom-10  opacity-70"
       />
     </div>

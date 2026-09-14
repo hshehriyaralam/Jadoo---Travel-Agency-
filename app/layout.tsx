@@ -14,10 +14,38 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jadoo-travel-agency-one.vercel.app"),
-  title: "Custom Travel Packages Pakistan – Tailored Itineraries & Exclusive Deals",
-  description: "Discover the leading travel agency in Pakistan – Jadoo offers custom itineraries, exclusive deals, and unforgettable journeys.",
+  title: "Custom Travel Packages Pakistan | Jadoo Travel Agency",
+  description:
+    "Explore custom travel packages in Pakistan, family-friendly Europe destinations, flight deals, and practical trip planning with Jadoo Travel Agency.",
   alternates: {
     canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "Jadoo Travel Agency",
+    title: "Custom Travel Packages Pakistan | Jadoo Travel Agency",
+    description:
+      "Explore custom travel packages, Europe destinations, flight deals, and practical trip planning with Jadoo Travel Agency.",
+    url: "https://jadoo-travel-agency-one.vercel.app/",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Jadoo Travel Agency - Custom Travel Packages",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Custom Travel Packages Pakistan | Jadoo Travel Agency",
+    description:
+      "Explore custom travel packages, Europe destinations, flight deals, and practical trip planning with Jadoo Travel Agency.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: "/Group.svg",
 };
@@ -32,11 +60,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
-        {/* <Navbar /> */}
-        {children}
-        {/* <Footer /> */}
-        </body>
+      <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
 }

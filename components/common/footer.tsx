@@ -70,19 +70,19 @@ const Footer = () => {
               src={fb}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
                    <Image
               src={insta}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
                    <Image
               src={X}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
             </div>
             <div  className='flex flex-col gap-2  mx-3'>
@@ -92,13 +92,13 @@ const Footer = () => {
               src={googlePlay}
                width={100}
                height={100}
-               alt='fb-logo'
+               alt='Google Play download badge'
                />
                    <Image
               src={PlayStore}
               width={100}
               height={100}
-              alt='fb-logo'
+              alt='Apple App Store download badge'
               />
             </div>
               </div>
@@ -169,19 +169,19 @@ const Footer = () => {
               src={fb}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
                    <Image
               src={insta}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
                    <Image
               src={X}
               width={60}
               height={60}
-              alt='fb-logo'
+              alt='Facebook'
               />
             </div>
             <div  className='flex flex-col gap-2  mx-3'>
@@ -191,13 +191,13 @@ const Footer = () => {
               src={googlePlay}
                width={100}
                height={100}
-               alt='fb-logo'
+               alt='Google Play download badge'
                />
                    <Image
               src={PlayStore}
               width={100}
               height={100}
-              alt='fb-logo'
+              alt='Apple App Store download badge'
               />
             </div>
               </div>

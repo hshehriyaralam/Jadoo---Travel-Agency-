@@ -2,13 +2,38 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
+import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Best Family-Friendly Europe Travel Destinations | Jadoo Travel",
-  description: "Plan family-friendly Europe travel with Jadoo Travel. Explore luxury itineraries, private tours, five-star resorts, and unforgettable family adventures.",
+  title: "Family-Friendly Europe Travel | Luxury Family Tours",
+  description:
+    "Explore family-friendly Europe travel destinations, luxury family tours, private experiences, and flexible itineraries with Jadoo Travel Agency.",
   alternates: {
     canonical: "/destinations",
   },
+  openGraph: {
+    type: "website",
+    title: "Family-Friendly Europe Travel | Luxury Family Tours",
+    description:
+      "Explore family-friendly Europe destinations, luxury family tours, and flexible European itineraries with Jadoo.",
+    url: `${siteUrl}/destinations`,
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Family-friendly Europe travel destinations",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Family-Friendly Europe Travel | Luxury Family Tours",
+    description:
+      "Explore family-friendly Europe destinations, luxury family tours, and flexible European itineraries with Jadoo.",
+    images: ["/og-image.png"],
+  },
+  robots: { index: true, follow: true },
 };
 
 const destinations = [
@@ -48,9 +73,30 @@ const destinations = [
 ];
 
 export default function DestinationsPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      organizationSchema,
+      {
+        "@type": "WebPage",
+        "@id": `${siteUrl}/destinations#webpage`,
+        url: `${siteUrl}/destinations`,
+        name: "Family-Friendly Europe Travel | Luxury Family Tours",
+        description:
+          "Explore family-friendly Europe travel destinations, luxury family tours, private experiences, and flexible itineraries.",
+        isPartOf: { "@id": `${siteUrl}/#website` },
+      },
+      breadcrumbSchema([
+        { name: "Home", path: "/" },
+        { name: "Destinations", path: "/destinations" },
+      ]),
+    ],
+  };
+
   return (
     <div className="min-h-screen bg-white text-[#181E4B]">
       <Navbar />
+      <JsonLd data={structuredData} />
 
       <main className="mx-auto max-w-[1100px] px-6 pb-24 pt-28">
         <p className="font-poppins font-semibold uppercase text-[#DF6951]">
@@ -59,7 +105,7 @@ export default function DestinationsPage() {
 
         <h1 className="mt-3 max-w-3xl font-volkhov text-4xl font-bold md:text-6xl">
           {/* Find the best travel destinations for your next journey. */}
-          Family-Friendly Europe Travel Destinations – Plan Your Family Adventure
+          Family-Friendly Europe Travel Destinations
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -73,7 +119,7 @@ export default function DestinationsPage() {
 
         <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-           Family-Friendly Europe Travel: Explore Top Destinations and Plan Your Adventure
+           Best Family-Friendly Europe Destinations
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -103,7 +149,7 @@ export default function DestinationsPage() {
             id="destination-list"
             className="font-volkhov text-3xl font-bold"
           >
-            Popular destinations
+            Popular Europe Travel Destinations
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -136,7 +182,7 @@ export default function DestinationsPage() {
 
         <section className="mt-14 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            How to choose the right destination
+            How to Choose the Right Europe Destination
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -158,7 +204,7 @@ export default function DestinationsPage() {
 
         <section className="mt-14 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Plan your European adventure
+            Plan Your European Adventure
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

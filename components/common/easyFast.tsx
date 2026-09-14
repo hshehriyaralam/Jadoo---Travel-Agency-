@@ -44,7 +44,7 @@ const EasyAndFast = () => {
                 className="flex items-start gap-4">
                 <div className="shrink-0">
                   <Image
-                    alt="custom travel packages"
+                    alt={`${data.title} travel planning step`}
                     src={data.image}
                     width={52}
                     height={52}
@@ -75,7 +75,7 @@ const EasyAndFast = () => {
             lg:mt-0 mt-25   ">
           <Image
             src={backShadow}
-            alt="holiday travel packages"
+            alt="European holiday travel planning card decoration"
             className="w-full  absolute  -top-40  -right-10  z-10 opacity-100 
             "
           />
@@ -96,7 +96,7 @@ const EasyAndFast = () => {
             <div className="relative w-full h-[170px] rounded-[24px] overflow-hidden">
               <Image
                 src={tourist}
-                alt="travel planning"
+                alt="Greece holiday travel planning example"
                 fill
                 className="object-cover"
               />
@@ -123,7 +123,7 @@ const EasyAndFast = () => {
                   <div key={img.id}>
                     <Image
                       src={img.image}
-                      alt="personalized travel itineraries"
+                      alt="Trip planning action icon"
                       width={36}
                       height={36}
                     />
@@ -135,7 +135,7 @@ const EasyAndFast = () => {
                 <div className="flex items-center gap-3">
                   <Image
                     src={building}
-                    alt="best travel agency Pakistan"
+                    alt="Travel group building icon"
                     width={18}
                     height={18}
                   />
@@ -147,7 +147,7 @@ const EasyAndFast = () => {
 
                 <Image
                   src={Heart}
-                  alt="travel agency Lahore"
+                  alt="Save trip icon"
                   width={20}
                   height={20}
                 />
@@ -166,7 +166,7 @@ const EasyAndFast = () => {
               
               ">
               <Image
-                alt="custom travel packages Pakistan"
+                alt="Rome trip traveler profile"
                 src={seondCardLogo}
                 className="w-full h-full object-cover"
               />
@@ -197,7 +197,7 @@ const EasyAndFast = () => {
 
                 <Image
                   src={progressBar}
-                  alt="jadoo travel agency"
+                  alt="Trip progress indicator"
                   width={156}
                   height={5}
                 />
