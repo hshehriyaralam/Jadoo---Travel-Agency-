@@ -10,9 +10,9 @@ import {
 } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Book Cheap Flights & Save | Jadoo Travel",
+  title: "Cheap Flight Booking Online | Jadoo Travel Agency",
   description:
-    "Book flights with Jadoo Travel Agency. Compare travel options, plan your journey, and get reliable flight booking support for domestic and international trips.",
+    "Find cheap flights online with Jadoo Travel Agency. Compare flight options and plan domestic or international trips with reliable booking support.",
   alternates: {
     canonical: "/booking",
   },

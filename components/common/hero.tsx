@@ -49,7 +49,7 @@ const Hero = () => {
             leading-tight  max-w-[545px] mx-auto lg:mx-0  z-50 "
             >
               {/* Travel, enjoy and live a new and full life */}
-              Custom Travel Packages in Pakistan for Every Traveler
+              Custom Travel Packages in Pakistan – Tailored Trips & Flights | Jadoo Travel Agency
             </h1>
           </div>
 
