@@ -16,11 +16,11 @@ const Hero = () => {
       <Image
         className="absolute left-0 top-0    w-[600px] h-[600px] opacity-100 "
         src={Ellipse}
-        alt="Travel planning illustration"
+        alt="Affordable travel"
       />
       <Image
         src={Decore}
-        alt="Jadoo Travel Agency booking illustration"
+        alt="Jadoo Travel Agency travel booking"
         className="absolute right-0  lg:max-w-[48%]   xl:max-w-[60%]  xl:max-w-[60%] 
              3xl:max-w-[60%] lg:h-[550px]"
       />
@@ -41,7 +41,7 @@ const Hero = () => {
           <div className="relative ">
             <Image
               src={underline}
-              alt="Custom travel packages underline decoration"
+              alt="Custom travel packages"
               className="hidden lg:block absolute top-16 left-50   w-[300px]  z-40"
             />
             <h1
@@ -49,15 +49,13 @@ const Hero = () => {
             leading-tight  max-w-[545px] mx-auto lg:mx-0  z-50 "
             >
               {/* Travel, enjoy and live a new and full life */}
-              Custom itineraries – Tailored travel experiences for every traveler
+              Travel Agency in Pakistan – Custom Tours, Holidays & Travel Packages
             </h1>
           </div>
 
           <p className="text-[#5E6282] font-[400] leading-[24px] text-[14px] max-w-[430px] mx-auto lg:mx-0">
             {" "}
-            Discover custom travel packages tailored to your preferences. Book
-            travel online with Jadoo Travel Agency for unforgettable journeys
-            and exclusive deals
+            Plan Pakistan and international holidays with Jadoo Travel Agency. Explore tour packages, custom itineraries, flights, hotels, and destination ideas built around your trip.
           </p>
 
           <div
@@ -76,7 +74,7 @@ const Hero = () => {
                 src={playButton}
                 width={60}
                 height={60}
-                alt="Travel planning demo play button"
+                alt="Personalized travel demo"
                 className="border"
               />
 
@@ -102,7 +100,7 @@ const Hero = () => {
                 src={Treveller}
                 width={620}
                 height={620}
-                alt="Traveler planning a custom trip in Pakistan"
+                alt="Custom travel packages in Pakistan"
                 className="relative z-10   right-0 lg:right-10  top-0 lg:-top-20 
              w-[420px]  lg:w-[620px]  h-auto"
               />
@@ -112,7 +110,7 @@ const Hero = () => {
               src={plane}
               width={140}
               height={140}
-              alt="Airplane travel decoration"
+              alt="Travel packages in Pakistan"
               className="absolute  top-0 left-16  lg:-top-10 lg:-left-12
             z-20   w-[80px] lg:w-[140px]  h-auto"
             />

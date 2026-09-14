@@ -17,7 +17,7 @@ const TopSelling = () => {
               Top Selling
             </p>
             <h2 className="text-[#14183E] font-volkhov font-bold lg:text-4xl text-3xl   text-center ">
-              Popular Travel Destinations
+              Top Destinations
             </h2>
           </div>
 
@@ -38,7 +38,7 @@ const TopSelling = () => {
                   <div className="h-70  w-full  rounded-3xl  bg-white">
                     <Image
                       src={sell.image}
-                      alt={`${sell.title} travel destination and holiday package`}
+                      alt="London travel packages"
                       className="w-full h-full  rounded-t-3xl"
                     />
                   </div>
@@ -64,7 +64,7 @@ const TopSelling = () => {
             ))}
 
             <Image
-              alt="Travel destinations decorative element"
+              alt="London vacation packages"
               src={Decore}
               className="absolute -right-15  lg:w-26 w-22 "
             />

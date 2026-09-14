@@ -2,38 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
-import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
+import { breadcrumbSchema, jsonLd, organizationSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Family-Friendly Europe Travel | Luxury Family Tours",
-  description:
-    "Explore family-friendly Europe travel destinations, luxury family tours, private experiences, and flexible itineraries with Jadoo Travel Agency.",
-  alternates: {
-    canonical: "/destinations",
-  },
+  title: "Family-Friendly Europe Travel Destinations | Jadoo",
+  description: "Explore family-friendly Europe travel destinations with Jadoo. Compare city breaks, cultural trips, multi-city itineraries and practical holiday ideas.",
+  alternates: { canonical: "/destinations" },
   openGraph: {
-    type: "website",
-    title: "Family-Friendly Europe Travel | Luxury Family Tours",
-    description:
-      "Explore family-friendly Europe destinations, luxury family tours, and flexible European itineraries with Jadoo.",
-    url: `${siteUrl}/destinations`,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Family-friendly Europe travel destinations",
-      },
-    ],
+    title: "Family-Friendly Europe Travel Destinations | Jadoo",
+    description: "Explore Europe destinations and build a practical family-friendly itinerary.",
+    url: "/destinations",
+    images: ["/seo-og.png"],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Family-Friendly Europe Travel | Luxury Family Tours",
-    description:
-      "Explore family-friendly Europe destinations, luxury family tours, and flexible European itineraries with Jadoo.",
-    images: ["/og-image.png"],
-  },
-  robots: { index: true, follow: true },
 };
 
 const destinations = [
@@ -73,30 +53,11 @@ const destinations = [
 ];
 
 export default function DestinationsPage() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@graph": [
-      organizationSchema,
-      {
-        "@type": "WebPage",
-        "@id": `${siteUrl}/destinations#webpage`,
-        url: `${siteUrl}/destinations`,
-        name: "Family-Friendly Europe Travel | Luxury Family Tours",
-        description:
-          "Explore family-friendly Europe travel destinations, luxury family tours, private experiences, and flexible itineraries.",
-        isPartOf: { "@id": `${siteUrl}/#website` },
-      },
-      breadcrumbSchema([
-        { name: "Home", path: "/" },
-        { name: "Destinations", path: "/destinations" },
-      ]),
-    ],
-  };
-
+  const schema = { "@context": "https://schema.org", "@graph": [organizationSchema, breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }])] };
   return (
     <div className="min-h-screen bg-white text-[#181E4B]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />
       <Navbar />
-      <JsonLd data={structuredData} />
 
       <main className="mx-auto max-w-[1100px] px-6 pb-24 pt-28">
         <p className="font-poppins font-semibold uppercase text-[#DF6951]">
@@ -105,7 +66,7 @@ export default function DestinationsPage() {
 
         <h1 className="mt-3 max-w-3xl font-volkhov text-4xl font-bold md:text-6xl">
           {/* Find the best travel destinations for your next journey. */}
-          Family-Friendly Europe Travel Destinations
+          Family-Friendly Europe Travel Destinations & Holiday Ideas
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -114,12 +75,12 @@ export default function DestinationsPage() {
           getaway, or a longer European adventure, Jadoo helps you explore
           destinations and find ideas for creating an itinerary that matches
           your interests, travel style, and available time. */}
-            Welcome to our destinations page. Discover Luxury Travel Packages with Five‑Star Resorts, Private Tours, and Exclusive Experiences.
+            Explore Europe travel destinations for family holidays, city breaks, cultural trips and flexible multi-city itineraries. Choose a destination based on your time, interests and travel style.
         </p>
 
         <section className="mt-12 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-           Best Family-Friendly Europe Destinations
+           Family-Friendly Europe Travel Destinations
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -149,7 +110,7 @@ export default function DestinationsPage() {
             id="destination-list"
             className="font-volkhov text-3xl font-bold"
           >
-            Popular Europe Travel Destinations
+            Popular destinations
           </h2>
 
           <div className="mt-8 grid gap-6 md:grid-cols-3">
@@ -182,7 +143,7 @@ export default function DestinationsPage() {
 
         <section className="mt-14 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            How to Choose the Right Europe Destination
+            How to choose the right destination
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -204,7 +165,7 @@ export default function DestinationsPage() {
 
         <section className="mt-14 max-w-4xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Plan Your European Adventure
+            Plan your European adventure
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">

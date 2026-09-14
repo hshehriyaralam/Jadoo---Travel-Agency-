@@ -9,42 +9,12 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const navLinks = [
-    {
-      id: 1,
-      text: "Destinations",
-      link: "/destinations",
-      border: false,
-    },
-    {
-      id: 2,
-      text: "Hotels",
-      link: "/destinations#hotels",
-      border: false,
-    },
-    {
-      id: 3,
-      text: "Flight",
-      link: "/destinations#flights",
-      border: false,
-    },
-    {
-      id: 4,
-      text: "Booking",
-      link: "/booking",
-      border: false,
-    },
-    {
-      id: 5,
-      text: "Login",
-      link: "/booking#contact",
-      border: false,
-    },
-    {
-      id: 6,
-      text: "SignUp",
-      link: "/booking",
-      border: true,
-    },
+    { id: 1, text: "Destinations", link: "/destinations", border: false },
+    { id: 2, text: "Pakistan Tours", link: "/pakistan-tour-packages", border: false },
+    { id: 3, text: "International", link: "/international-tour-packages", border: false },
+    { id: 4, text: "Custom Trips", link: "/custom-travel-packages", border: false },
+    { id: 5, text: "Flights", link: "/flight-booking", border: false },
+    { id: 6, text: "Booking", link: "/booking", border: true },
   ];
 
   return (

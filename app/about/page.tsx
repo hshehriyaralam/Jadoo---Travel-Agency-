@@ -2,41 +2,21 @@
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
-import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
+import { breadcrumbSchema, jsonLd, organizationSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "About Jadoo Travel Agency",
   description:
-    "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays with practical trip ideas.",
+    "Learn about Jadoo Travel Agency and how we help travelers plan Pakistan and international holidays, custom itineraries and travel services.",
   alternates: { canonical: "/about" },
-  openGraph: {
-    type: "website",
-    title: "About Jadoo Travel Agency",
-    description:
-      "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays.",
-    url: `${siteUrl}/about`,
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "About Jadoo Travel Agency",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "About Jadoo Travel Agency",
-    description:
-      "Learn how Jadoo Travel Agency helps travelers discover destinations and plan memorable holidays.",
-    images: ["/og-image.png"],
-  },
-  robots: { index: true, follow: true },
+  openGraph: { title: "About Jadoo Travel Agency", description: "Learn about Jadoo Travel Agency and our approach to travel planning.", url: "/about", images: ["/seo-og.png"] },
 };
 
 export default function AboutPage() {
+  const schema = { "@context": "https://schema.org", "@graph": [organizationSchema, breadcrumbSchema([{ name: "Home", path: "/" }, { name: "About", path: "/about" }])] };
   return (
     <div className="min-h-screen bg-white text-[#181E4B]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(schema)} />
       <Navbar />
       <main className="mx-auto max-w-225 px-6 pb-24 pt-28">
         <p className="font-poppins font-semibold uppercase text-[#DF6951]">About Jadoo</p>

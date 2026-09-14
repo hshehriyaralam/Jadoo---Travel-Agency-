@@ -70,19 +70,19 @@ const Footer = () => {
               src={fb}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
                    <Image
               src={insta}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
                    <Image
               src={X}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
             </div>
             <div  className='flex flex-col gap-2  mx-3'>
@@ -92,13 +92,13 @@ const Footer = () => {
               src={googlePlay}
                width={100}
                height={100}
-               alt='Google Play download badge'
+               alt='Jadoo social media icon'
                />
                    <Image
               src={PlayStore}
               width={100}
               height={100}
-              alt='Apple App Store download badge'
+              alt='Jadoo social media icon'
               />
             </div>
               </div>
@@ -169,19 +169,19 @@ const Footer = () => {
               src={fb}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
                    <Image
               src={insta}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
                    <Image
               src={X}
               width={60}
               height={60}
-              alt='Facebook'
+              alt='Jadoo social media icon'
               />
             </div>
             <div  className='flex flex-col gap-2  mx-3'>
@@ -191,13 +191,13 @@ const Footer = () => {
               src={googlePlay}
                width={100}
                height={100}
-               alt='Google Play download badge'
+               alt='Jadoo social media icon'
                />
                    <Image
               src={PlayStore}
               width={100}
               height={100}
-              alt='Apple App Store download badge'
+              alt='Jadoo social media icon'
               />
             </div>
               </div>

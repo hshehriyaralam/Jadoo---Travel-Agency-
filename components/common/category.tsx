@@ -16,7 +16,7 @@ const Category = () => {
          <Image  
         src={decore}
         width={100}
-        alt="Jadoo Travel Agency travel service decoration"
+        alt="Jadoo Travel Agency – Affordable Travel Packages Near You in Pakistan"
         className=" hidden lg:block absolute  right-0"   
         />
       <div className="flex flex-col items-center justify-center  gap-6">
@@ -27,7 +27,7 @@ const Category = () => {
             Category
           </p>
           <h2 className="text-[#14183E] font-volkhov font-bold text-4xl   text-center ">
-            Best Travel Services for Your Next Trip
+            We Offer Best Services
           </h2>
         </div>
 
@@ -50,7 +50,7 @@ const Category = () => {
                 <Image
                   src={cat.image}
                   width={cat.imageWidth}
-                  alt={`${cat.titile} travel service for Jadoo customers`}
+                  alt={`${cat.titile} travel service`}
                 />
               </div>
               <div>
@@ -74,7 +74,7 @@ const Category = () => {
           className="hidden lg:block  relative  z-30   right-58  bottom-22 "
           width={70}
           height={70}
-          alt="Travel services decorative square"
+          alt="Sqaure"
         /> */}
       </div>
       </div>
