@@ -2,12 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/common/footer";
-import { JsonLd, organizationSchema, breadcrumbSchema, siteUrl } from "@/lib/seo";
+import {
+  JsonLd,
+  organizationSchema,
+  breadcrumbSchema,
+  siteUrl,
+} from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Book Cheap Flights & Save | Jadoo Travel",
   description:
-    "Find cheap flight booking options, travel planning ideas, and reliable support with Jadoo Travel Agency.",
+    "Book flights with Jadoo Travel Agency. Compare travel options, plan your journey, and get reliable flight booking support for domestic and international trips.",
   alternates: {
     canonical: "/booking",
   },
@@ -22,7 +27,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Cheap flight booking with Jadoo Travel",
+        alt: "Book Cheap Flights & Save | Jadoo Travel",
       },
     ],
   },
@@ -78,7 +83,7 @@ export default function BookingPage() {
 
         <h1 className="mt-3 font-volkhov text-4xl font-bold md:text-6xl">
           {/* Plan your next journey with confidence. */}
-           Cheap Flight Booking & Travel Planning
+          Cheap Flight Booking & Travel Planning
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5E6282]">
@@ -88,34 +93,36 @@ export default function BookingPage() {
           travel plan. Whether you are traveling for a weekend or planning a
           longer international adventure, having a clear plan can make your
           journey more comfortable and enjoyable. */}
-          Explore flight booking options, compare your travel needs, and organize the key details of your next journey with Jadoo Travel Agency. 
+          Explore flight booking options, compare your travel needs, and
+          organize the key details of your next journey with Jadoo Travel
+          Agency.
         </p>
 
         <section className="mt-12 max-w-3xl">
           <h2 className="font-volkhov text-3xl font-bold">
-            Plan Your Trip Around Your Budget and Schedule
+            Plan Your Flight and Trip Around Your Budget
           </h2>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
-            Every traveler has different priorities. Some people want to
-            explore historic landmarks and museums, while others prefer local
-            food, nature, shopping, or relaxing in a new city. A useful travel
-            plan should reflect your interests instead of following a fixed
-            schedule designed for everyone.
+            Every traveler has different priorities. Some people want to explore
+            historic landmarks and museums, while others prefer local food,
+            nature, shopping, or relaxing in a new city. A useful travel plan
+            should reflect your interests instead of following a fixed schedule
+            designed for everyone.
           </p>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
             Start by selecting a destination and identifying the experiences
             that matter most to you. Then consider the length of your stay,
-            transportation options, accommodation area, and activities you
-            would like to experience. Keeping these details organized makes it
-            easier to build an itinerary that is realistic and flexible.
+            transportation options, accommodation area, and activities you would
+            like to experience. Keeping these details organized makes it easier
+            to build an itinerary that is realistic and flexible.
           </p>
         </section>
 
         <section className="mt-14">
           <h2 className="font-volkhov text-3xl font-bold">
-            3 Simple Steps to Plan Your Trip
+            Simple Steps for Flight and Travel Planning
           </h2>
 
           <div className="mt-8 grid gap-5 md:grid-cols-3">
@@ -134,8 +141,8 @@ export default function BookingPage() {
 
               <p className="mt-2 leading-7 text-[#5E6282]">
                 Decide which landmarks, activities, food experiences, and local
-                attractions you want to include. Balance planned activities
-                with enough free time to explore.
+                attractions you want to include. Balance planned activities with
+                enough free time to explore.
               </p>
             </article>
 
@@ -180,10 +187,9 @@ export default function BookingPage() {
           <p className="mt-4 leading-7 text-[#5E6282]">
             Begin by exploring destinations and finding a place that fits your
             travel goals. From Rome and London to broader European adventures,
-            choosing a destination gives you a starting point for building
-            your itinerary. Think about how long you want to stay, what you
-            want to see, and which experiences will make your journey
-            memorable.
+            choosing a destination gives you a starting point for building your
+            itinerary. Think about how long you want to stay, what you want to
+            see, and which experiences will make your journey memorable.
           </p>
 
           <p className="mt-4 leading-7 text-[#5E6282]">
@@ -205,4 +211,3 @@ export default function BookingPage() {
     </div>
   );
 }
-
